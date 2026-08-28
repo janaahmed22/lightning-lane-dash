@@ -10,7 +10,7 @@ LANES = 3
 START_LIVES = 3
 BOOST_DURATION = 1.5
 
-#falling stuff (obstacles or nitro cans)
+#falling stuff (obstacles or nitro)
 class FallingThing:
     def __init__(self, lane, kind, speed):
         self.lane = lane
