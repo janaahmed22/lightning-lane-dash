@@ -11,7 +11,7 @@ We collected our own dataset of two hand gestures:
 * Open palm 🖐️
 * Peace sign ✌️
 
-The images were taken using webcams under different lighting conditions, backgrounds, and hand positions. Data augmentation was also used to make the model more reliable.
+The images were taken using webcams under different lighting conditions, backgrounds, and hand positions.
 
 ## 2. Model Training
 
