@@ -30,7 +30,6 @@ class RaceGame:
         self.lives = START_LIVES
         self.boost_end = 0
         self.objects = []
-        self.trail = []
         self.start_time = time.time()
         self.best_score = 0
         self.game_over = False
@@ -54,7 +53,7 @@ class RaceGame:
         for o in self.objects:
             o.move_down(dt)
             #check collision with car
-            if abs(o.y-(SCREEN_H-80))<40 and o.lane==self.car_lane:
+            if (o.y-(SCREEN_H-80))<40 and o.lane==self.car_lane:
                 if o.kind=="nitro":
                     self.nitro_points += 1
                     self.score += 10
